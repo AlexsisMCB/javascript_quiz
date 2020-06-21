@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <h2 id="clock"></h3>
+    <div class="beginning" id="beginning">
+      <h1 class="welcome">JavaScript Quiz</h1>
+      <p>
+          Take this quiz on JavaScript fundamentals to see what you know.
+          Any wrong answer will deduct 10 seconds from the time clock.
+          You have exactly one minute to finish. You will be given a score at the end of the quiz!
+      </p>
+      <button class="start-btn" id="start-btn">Good Luck!</button>
+    </div>
+
+    <div id="quiz" class="quiz hidden">
+        <h3 class="quiz-questions" id="question">Question</h3>
+        <div class="choices">
+            <button id="choice-btnA" class="button">Answer A</button>
+            <button id="choice-btnB" class="button">Answer B</button>
+            <button id="choice-btnC" class="button">Answer C</button>
+        </div>
+        <div class="controls">
+            <button id="next-btn" class="next-btn">Next</button>
+        </div>
+    </div>
+
+    <div id="high-score"></div>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
