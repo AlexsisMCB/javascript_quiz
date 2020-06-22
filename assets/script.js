@@ -8,7 +8,11 @@ var answerCEl = document.getElementById('choice-btnC');
 var highScore = document.getElementById('high-score');
 var introEl = document.getElementById('beginning');
 
-var timeRemaining = 60;
+var timeRemaining = 59;
+
+var questionIndex = 1;
+
+var score = timeRemaining;
 
 
 function countdown() {
@@ -21,6 +25,11 @@ function countdown() {
             clearInterval(timeInterval);
         }
     }, 1000);
+}
+
+function next () {
+    //console.log(questionIndex);
+    questionIndex++;
 }
 
 function startQuiz() {
@@ -51,7 +60,6 @@ function showQuestion () {
 
 var questions = [
     "Which is an example of a boolean data type?",
-    "Which is an example of a boolean data type?"
 ]
 
 var choices = [
@@ -60,6 +68,7 @@ var choices = [
 
 var quizQuestions = [
     { 
+        id: 1,
         question: "Which is an example of a boolean data type?",
         choices: [
             {text: "Hello!", answer: false },
@@ -68,6 +77,7 @@ var quizQuestions = [
         ]
     },
     { 
+        id: 2,
         question: "What symbol is used to make comments in JavaScript?",
         choices: [
             {text: "//", answer: true },
@@ -76,6 +86,7 @@ var quizQuestions = [
         ]
     },
     {
+        id: 3,
         question: "What is not a form of a loop?",
         choices: [
             {text: "for", answer: false },
