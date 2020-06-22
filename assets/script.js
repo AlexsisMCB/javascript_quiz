@@ -58,6 +58,32 @@ var choices = [
     "Hello!","False","25"
 ]
 
+var quizQuestions = [
+    { 
+        question: "Which is an example of a boolean data type?",
+        choices: [
+            {text: "Hello!", answer: false },
+            {text: "False", answer: true },
+            {text: "25", answer: false }
+        ]
+    },
+    { 
+        question: "What symbol is used to make comments in JavaScript?",
+        choices: [
+            {text: "//", answer: true },
+            {text: "=", answer: false },
+            {text: "$", answer: false }
+        ]
+    },
+    {
+        question: "What is not a form of a loop?",
+        choices: [
+            {text: "for", answer: false },
+            {text: "while", answer: false },
+            {text: "because", answer: true }
+        ]
+    }
+];
 
 
 startBtn.onclick = countdown;

@@ -13,12 +13,12 @@ body {
     align-items: center;
 }
 
-h2 {
+.timer {
     color: rgba(38, 38, 124, 0.829);
     display: flex;
     align-self: flex-start;
+    padding: 50px;
 }
-
 .welcome {
     text-align: center;
     font-size: 50px;
@@ -28,6 +28,10 @@ p {
     font-size: 20px;
     text-align: center;
     padding: 10px 50px;
+}
+
+.good-luck {
+    text-align: center;
 }
 
 .start-btn {

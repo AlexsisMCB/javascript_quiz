@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <h2 id="clock"></h3>
+    <div class="timer">
+        <h2 id="clock"></h2>
+    </div>
     <div class="beginning" id="beginning">
-      <h1 class="welcome">JavaScript Quiz</h1>
-      <p>
-          Take this quiz on JavaScript fundamentals to see what you know.
-          Any wrong answer will deduct 10 seconds from the time clock.
-          You have exactly one minute to finish. You will be given a score at the end of the quiz!
-      </p>
-      <button class="start-btn" id="start-btn">Good Luck!</button>
+        <h1 class="welcome">JavaScript Quiz</h1>
+        <p>
+            Take this quiz on JavaScript fundamentals to see what you know.
+            Any wrong answer will deduct 10 seconds from the time clock.
+            You have exactly one minute to finish. You will be given a score at the end of the quiz!
+        </p>
+        <div class="good-luck">
+            <button class="start-btn" id="start-btn">Good Luck!</button>
+        </div>
     </div>
 
     <div id="quiz" class="quiz hidden">
